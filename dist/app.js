@@ -1,0 +1,13 @@
+"use strict";
+/// <reference path="../typings/main.d.ts" />
+const express = require("express");
+var app = express();
+var port = process.env.port || 8080;
+app.get('/', function (req, res) {
+    res.send('hello world!');
+});
+app.listen(port, () => {
+    console.log(`Server started at port https://localhost:${port}`);
+});
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsNkNBQTZDO0FBQzdDLE1BQVksT0FBTyxXQUFNLFNBQVMsQ0FBQyxDQUFBO0FBR25DLElBQUksR0FBRyxHQUFHLE9BQU8sRUFBRSxDQUFBO0FBRW5CLElBQUksSUFBSSxHQUFXLE9BQU8sQ0FBQyxHQUFHLENBQUMsSUFBSSxJQUFJLElBQUksQ0FBQTtBQUUzQyxHQUFHLENBQUMsR0FBRyxDQUFDLEdBQUcsRUFBQyxVQUFTLEdBQUcsRUFBQyxHQUFHO0lBQ3hCLEdBQUcsQ0FBQyxJQUFJLENBQUMsY0FBYyxDQUFDLENBQUM7QUFDN0IsQ0FBQyxDQUFDLENBQUE7QUFFRixHQUFHLENBQUMsTUFBTSxDQUFDLElBQUksRUFBRTtJQUNiLE9BQU8sQ0FBQyxHQUFHLENBQUMsNENBQTRDLElBQUksRUFBRSxDQUFDLENBQUM7QUFDcEUsQ0FBQyxDQUFDLENBQUEiLCJmaWxlIjoiYXBwLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8vIDxyZWZlcmVuY2UgcGF0aD1cIi4uL3R5cGluZ3MvbWFpbi5kLnRzXCIgLz5cbmltcG9ydCAqIGFzIGV4cHJlc3MgZnJvbSBcImV4cHJlc3NcIjtcbmltcG9ydCAqIGFzIGNvcnMgZnJvbSBcImNvcnNcIjtcblxudmFyIGFwcCA9IGV4cHJlc3MoKVxuXG52YXIgcG9ydDogbnVtYmVyID0gcHJvY2Vzcy5lbnYucG9ydCB8fCA4MDgwXG5cbmFwcC5nZXQoJy8nLGZ1bmN0aW9uKHJlcSxyZXMpe1xuICAgIHJlcy5zZW5kKCdoZWxsbyB3b3JsZCEnKTsgICAgXG59KVxuXG5hcHAubGlzdGVuKHBvcnQsICgpID0+IHtcbiAgICBjb25zb2xlLmxvZyhgU2VydmVyIHN0YXJ0ZWQgYXQgcG9ydCBodHRwczovL2xvY2FsaG9zdDoke3BvcnR9YCk7XG59KSJdfQ==
